@@ -18,14 +18,14 @@ Examples:
 #|         |No change in display |
 
 
-  Scenario Outline:Error page is displayed for search
-    Given I navigate to Amazon homepage
-    When I enter "Item" into the search box
-    Then an error page is displayed showing no results
-
-    Examples:
-      |Item     |
-      |NNNNMM   |
+#  Scenario Outline:Error page is displayed for search
+#    Given I navigate to Amazon homepage
+#    When I enter "Item" into the search box
+#    Then an error page is displayed showing no results
+#
+#    Examples:
+#      |Item     |
+#      |NNNNMM   |
 #      |gghgh    |
 
 
