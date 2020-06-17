@@ -15,9 +15,10 @@ public class Hook extends BrowserManager
     public void setUp()
     {
         launchBrowser("Chrome");
-    }
+    }// help me set up chrome
     @After
-    public  void tearDown()
+    public  void tearDown() // then, after let selenium help me to tear down,
+                            // once it finishes running
     {
         closeBrowser();
     }
