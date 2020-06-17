@@ -39,10 +39,10 @@ public class BrowserManager extends DriverManager
         // we set up the firefoxDriver:
         WebDriverManager.firefoxdriver().setup();
         return new FirefoxDriver();
-        //so, anytime the method WebDriver is called, it will flash ChromeDriver
+        //so, anytime the method WebDriver is called, it will flash firefoxDriver
     }
 
-    // we want another ChromeDriver-headless chrome
+    // we want another firefoxDriver-headless firefox
     //1) because it is very fast 2) Jenkins run with headless chrome
 
     private WebDriver initHeadlessFirefox()
