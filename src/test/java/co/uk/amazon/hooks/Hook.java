@@ -12,14 +12,15 @@ import io.cucumber.java.Before;
 public class Hook extends BrowserManager
 {
     @Before
-    public void setUp()
-    {
+    public void setUp() {
         launchBrowser("Chrome");
-    }// help me set up chrome
+        // help me set up chrome
+    }
     @After
-    public  void tearDown() // then, after let selenium help me to tear down,
-                            // once it finishes running
+    public  void tearDown() // then, after let selenium help me to tear down,// once it finishes running
     {
-        closeBrowser();
+        //closeBrowser();
     }
 }
+
+

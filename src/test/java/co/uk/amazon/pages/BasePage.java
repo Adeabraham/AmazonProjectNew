@@ -1,6 +1,7 @@
 package co.uk.amazon.pages;
 
 import co.uk.amazon.commons.DriverManager;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -26,10 +27,14 @@ public class BasePage extends DriverManager
      {
          // this method will be used on any of the pages to select anything
          select = new Select(element);
-         select.selectByVisibleText(text);
+         select.selectByVisibleText(text);//select action
+         //to verify that what is selected is displayed:
+         Assert.assertTrue(select.getFirstSelectedOption().getText().equals(text));//verify true that what is selected is what is displayed: //
+                                   // get the element before selected element, get the text attached to it and make sure it equals to
+                                  // what we asked u to select
+                   //NOTE:Really do not need to verify what is selected as in above
      }
      public void selectByValue(WebElement element,String value)
-
      {
          select = new Select(element);
          select.selectByValue(value);
