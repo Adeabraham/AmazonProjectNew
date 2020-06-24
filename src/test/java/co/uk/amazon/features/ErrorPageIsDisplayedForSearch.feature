@@ -1,4 +1,4 @@
-@regression
+@ignore
 Feature: Search for items
   As a customer
   I want to be able to search for any item of my choice
